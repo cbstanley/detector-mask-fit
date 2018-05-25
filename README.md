@@ -5,8 +5,7 @@ of a motorized mask in front of a neutron area detector.
 
 A small test data set is given in the mask_data folder.
 
-
-Here's an example plot with fit:
-
 ____
-#### ![mask_fit](mask_fit.png)
+#### Here's an example plot with fit:
+
+![mask_fit](mask_fit.png)
