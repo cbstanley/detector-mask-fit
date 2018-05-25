@@ -8,4 +8,5 @@ A small test data set is given in the mask_data folder.
 
 Here's an example plot with fit:
 
-![mask_fit](mask_fit.png)
+____
+#### ![mask_fit](mask_fit.png)
