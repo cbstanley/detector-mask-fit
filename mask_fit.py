@@ -20,7 +20,7 @@ def fit_func(x, base, slope, max_val, k0, x0, k1, x1):
     '''
     Fit function using two sigmoidals and slope baseline
     '''
-    y = base + slope*x + max_val*(expit(k0*(x-x0)) - expit(k1*(x-x1)))
+    y = base + slope*x + max_val*(expit(k0*(x - x0)) - expit(k1*(x - x1)))
 
     return y
 
@@ -74,8 +74,11 @@ def make_plot(mask_pos, xdata, ydata, edata, popt):
     pylab.plot(xdata, ydata, 'o', label='data')
     pylab.errorbar(xdata, ydata, edata)
     pylab.plot(x, y, label='fit', zorder=3)
+    pylab.title('Mask Fit', fontsize=16)
+    pylab.xlabel('$pixels$', fontsize=14)
+    pylab.ylabel('$counts$', fontsize=14)
     pylab.ylim(-10, 950)
-    pylab.legend(loc='best')
+    pylab.legend(loc='best', fontsize=14)
     pylab.show()
 
 
